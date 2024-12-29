@@ -61,7 +61,7 @@ func (pkgDefs *PackagesDefinitions) getTypeFromGenericParam(genericParam string,
 			Enums:      typeSpecDef.Enums,
 			PkgPath:    typeSpecDef.PkgPath,
 			ParentSpec: typeSpecDef.ParentSpec,
-			SchemaName: "array_" + typeSpecDef.SchemaName,
+			SchemaName: "[]" + typeSpecDef.SchemaName,
 			NotUnique:  false,
 		}
 	}
