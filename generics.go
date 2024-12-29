@@ -53,7 +53,7 @@ func (pkgDefs *PackagesDefinitions) getTypeFromGenericParam(genericParam string,
 		}
 		return &TypeSpecDef{
 			TypeSpec: &ast.TypeSpec{
-				Name: ast.NewIdent(string(IgnoreNameOverridePrefix) + "[]" + typeSpecDef.TypeName()),
+				Name: ast.NewIdent(string(IgnoreNameOverridePrefix) + "array_" + typeSpecDef.TypeName()),
 				Type: &ast.ArrayType{
 					Elt: expr,
 				},
@@ -61,7 +61,7 @@ func (pkgDefs *PackagesDefinitions) getTypeFromGenericParam(genericParam string,
 			Enums:      typeSpecDef.Enums,
 			PkgPath:    typeSpecDef.PkgPath,
 			ParentSpec: typeSpecDef.ParentSpec,
-			SchemaName: "[]" + typeSpecDef.SchemaName,
+			SchemaName: "array_" + typeSpecDef.SchemaName,
 			NotUnique:  false,
 		}
 	}
