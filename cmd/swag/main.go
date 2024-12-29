@@ -7,11 +7,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/mini-maxit/swag"
+	"github.com/mini-maxit/swag/format"
+	"github.com/mini-maxit/swag/gen"
 	"github.com/urfave/cli/v2"
-
-	"github.com/swaggo/swag"
-	"github.com/swaggo/swag/format"
-	"github.com/swaggo/swag/gen"
 )
 
 const (

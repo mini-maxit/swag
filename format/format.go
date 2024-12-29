@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/swaggo/swag"
+	"github.com/mini-maxit/swag"
 )
 
 // Format implements `fmt` command for formatting swag comments in Go source
