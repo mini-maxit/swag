@@ -53,7 +53,7 @@ func (pkgDefs *PackagesDefinitions) getTypeFromGenericParam(genericParam string,
 		}
 		return &TypeSpecDef{
 			TypeSpec: &ast.TypeSpec{
-				Name: ast.NewIdent(string(IgnoreNameOverridePrefix) + "array_" + typeSpecDef.TypeName()),
+				Name: ast.NewIdent(string(IgnoreNameOverridePrefix) + "[]" + typeSpecDef.TypeName()),
 				Type: &ast.ArrayType{
 					Elt: expr,
 				},
